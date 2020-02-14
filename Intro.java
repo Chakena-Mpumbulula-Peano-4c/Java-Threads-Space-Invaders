@@ -14,6 +14,7 @@ import java.awt.Graphics;
  * @author mpumbulula.chakenane
  */
 public class Intro extends Spazio {
+     private int i = 0;
 
     @Override
     public void paint(Graphics g) {
@@ -27,9 +28,18 @@ public class Intro extends Spazio {
             g.drawString("          by Chakena Mpumbulula", 110, 110);            
         }
 
-    void run() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    void run() throws InterruptedException {
+        setBackground (Color.BLACK);
+       setSize(800, 600);
+               
+        for(i=100;i>=0;i-=1) {
+            System.out.println("i: " + i);
+            this.repaint();
+            Thread.sleep(50);
+        }
+        
+       }
+    
     }
     
 

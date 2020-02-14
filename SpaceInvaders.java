@@ -21,7 +21,7 @@ public class SpaceInvaders extends JFrame {
        
     }
 
-    public SpaceInvaders() {
+    public SpaceInvaders() throws InterruptedException {
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
          Intro intro = new Intro();
         this.add(intro);
