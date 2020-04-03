@@ -17,8 +17,8 @@ public class SpaceInvaders extends JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-       
+    public static void main(String[] args)throws InterruptedException {
+     new SpaceInvaders();
     }
 
     public SpaceInvaders() throws InterruptedException {
@@ -31,7 +31,6 @@ public class SpaceInvaders extends JFrame {
         // avvia l'introduzione
         intro.run();      
 
-
     }
-    
+   
 }
